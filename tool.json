@@ -1,0 +1,212 @@
+{
+  "tool": {
+    "id": "escore-de-mayo-parcial",
+    "title": "Escore de Mayo parcial (retocolite)",
+    "short": "Atividade clínica da retocolite ulcerativa sem endoscopia",
+    "desc": "Calcule o escore de Mayo parcial na retocolite ulcerativa: frequência evacuatória, sangramento retal e avaliação médica global, sem o componente endoscópico.",
+    "lead": "Versão não invasiva do escore de Mayo (0 a 9 pontos), sem a endoscopia. Acompanha a atividade da retocolite ulcerativa entre as colonoscopias e a resposta ao tratamento.",
+    "spec": [
+      "coloproctologia",
+      "gastroenterologia"
+    ],
+    "tier": 1,
+    "fields": [
+      [
+        "freq",
+        "Frequência evacuatória",
+        "radio",
+        {
+          "opts": {
+            "0": "Normal para o paciente",
+            "1": "1 a 2 a mais que o normal",
+            "2": "3 a 4 a mais",
+            "3": "5 ou mais a mais"
+          }
+        }
+      ],
+      [
+        "sang",
+        "Sangramento retal",
+        "radio",
+        {
+          "opts": {
+            "0": "Nenhum",
+            "1": "Sangue em menos da metade das evacuações",
+            "2": "Sangue em metade ou mais",
+            "3": "Só sangue (sem fezes)"
+          }
+        }
+      ],
+      [
+        "global",
+        "Avaliação médica global",
+        "radio",
+        {
+          "opts": {
+            "0": "Normal",
+            "1": "Doença leve",
+            "2": "Moderada",
+            "3": "Grave"
+          }
+        }
+      ]
+    ],
+    "score": {
+      "label": "Mayo parcial",
+      "unit": "de 9",
+      "bands": [
+        [
+          0,
+          "low",
+          "Escore ≤ 2: compatível com remissão clínica",
+          "Corte de 2,5 com melhor sensibilidade e especificidade para remissão percebida pelo paciente (Lewis 2008)."
+        ],
+        [
+          3,
+          "mid",
+          "Escore ≥ 3: doença clinicamente ativa",
+          "Queda de 3 pontos ou mais em relação ao basal indica resposta clínica (Lewis 2008)."
+        ]
+      ]
+    },
+    "formula": "<p>Frequência evacuatória (0 a 3) + sangramento retal (0 a 3) + avaliação médica global (0 a 3). Total de 0 a 9.</p><p>O escore de Mayo completo (0 a 12) soma o aspecto endoscópico (0 a 3).</p>",
+    "table": [
+      [
+        "Resultado",
+        "Interpretação (Lewis 2008)"
+      ],
+      [
+        "≤ 2",
+        "Compatível com remissão clínica"
+      ],
+      [
+        "≥ 3",
+        "Doença ativa"
+      ],
+      [
+        "Queda ≥ 3 pontos",
+        "Resposta clínica"
+      ]
+    ],
+    "tips": [
+      "A frequência é comparada com o hábito <strong>do próprio paciente</strong> antes da doença, não com um valor fixo.",
+      "O sangramento considera o pior dia; \"só sangue\" exige pelo menos uma evacuação só de sangue.",
+      "Remissão clínica não é remissão endoscópica: a meta atual inclui cicatrização da mucosa (subescore endoscópico 0 ou 1).",
+      "Surto grave (6 ou mais evacuações com sangue por dia e sinais sistêmicos pelos critérios de Truelove e Witts) pede internação, qualquer que seja o escore."
+    ],
+    "sources": [
+      [
+        "Schroeder KW, Tremaine WJ, Ilstrup DM. Coated oral 5-aminosalicylic acid therapy for mildly to moderately active ulcerative colitis: a randomized study. N Engl J Med, 1987.",
+        "https://doi.org/10.1056/NEJM198712243172603"
+      ],
+      [
+        "Lewis JD et al. Use of the noninvasive components of the Mayo score to assess clinical response in ulcerative colitis. Inflamm Bowel Dis, 2008.",
+        "https://doi.org/10.1002/ibd.20520"
+      ]
+    ],
+    "cases": [
+      [
+        "1-1-0: 2 pontos (remissão)",
+        {
+          "freq": "1",
+          "sang": "1",
+          "global": "0"
+        },
+        {
+          "score": 2,
+          "level": "low"
+        }
+      ],
+      [
+        "1-1-1: 3 pontos (ativa, limite)",
+        {
+          "freq": "1",
+          "sang": "1",
+          "global": "1"
+        },
+        {
+          "score": 3,
+          "level": "mid"
+        }
+      ],
+      [
+        "3-2-2: 7 pontos (ativa)",
+        {
+          "freq": "3",
+          "sang": "2",
+          "global": "2"
+        },
+        {
+          "score": 7,
+          "level": "mid"
+        }
+      ]
+    ],
+    "batch": "renal-digestivo",
+    "kind": "Escore",
+    "config": {
+      "unit": "de 9",
+      "label": "Mayo parcial",
+      "fields": [
+        [
+          "freq",
+          "radio",
+          0
+        ],
+        [
+          "sang",
+          "radio",
+          0
+        ],
+        [
+          "global",
+          "radio",
+          0
+        ]
+      ],
+      "bands": [
+        [
+          0,
+          "low",
+          "Escore ≤ 2: compatível com remissão clínica",
+          "Corte de 2,5 com melhor sensibilidade e especificidade para remissão percebida pelo paciente (Lewis 2008)."
+        ],
+        [
+          3,
+          "mid",
+          "Escore ≥ 3: doença clinicamente ativa",
+          "Queda de 3 pontos ou mais em relação ao basal indica resposta clínica (Lewis 2008)."
+        ]
+      ]
+    },
+    "areaId": "renal-digestivo",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/renal-digestivo.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 3,
+      "passed": 3,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/renal-digestivo.php",
+    "sha256": "95087d729438637d36e1a49af04d8de0fe1d9f7876443084443906a9281ef107",
+    "bytes": 109421
+  },
+  "clinicalValidation": "not-performed"
+}
