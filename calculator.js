@@ -1,11 +1,11 @@
-/* tool-escore-de-mayo-parcial · Elucenia · https://github.com/Elucenia/tool-escore-de-mayo-parcial
-   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+/* tool-escore-de-mayo-parcial · ELUCENIA · https://github.com/Elucenia/tool-escore-de-mayo-parcial
+   Copyright (c) 2026 ELUCENIA · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
    Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"escore-de-mayo-parcial","title":"Escore de Mayo parcial (retocolite)","fields":[["freq","Frequência evacuatória","radio",{"opts":{"0":"Normal para o paciente","1":"1 a 2 a mais que o normal","2":"3 a 4 a mais","3":"5 ou mais a mais"}}],["sang","Sangramento retal","radio",{"opts":{"0":"Nenhum","1":"Sangue em menos da metade das evacuações","2":"Sangue em metade ou mais","3":"Só sangue (sem fezes)"}}],["global","Avaliação médica global","radio",{"opts":{"0":"Normal","1":"Doença leve","2":"Moderada","3":"Grave"}}]],"config":{"unit":"de 9","label":"Mayo parcial","fields":[["freq","radio",0],["sang","radio",0],["global","radio",0]],"bands":[[0,"low","Escore ≤ 2: compatível com remissão clínica","Corte de 2,5 com melhor sensibilidade e especificidade para remissão percebida pelo paciente (Lewis 2008)."],[3,"mid","Escore ≥ 3: doença clinicamente ativa","Queda de 3 pontos ou mais em relação ao basal indica resposta clínica (Lewis 2008)."]]},"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
