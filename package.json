@@ -1,19 +1,42 @@
 {
   "name": "@elucenia/tool-escore-de-mayo-parcial",
   "version": "0.1.0",
-  "description": "Escore de Mayo parcial (retocolite)",
+  "description": "Escore de Mayo parcial (retocolite) · Elucenia: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
+  "keywords": [
+    "elucenia",
+    "medical-calculator",
+    "clinical-score",
+    "healthcare",
+    "zero-dependencies",
+    "escore-de-mayo-parcial"
+  ],
   "main": "calculator.js",
   "type": "commonjs",
-  "license": "MIT",
+  "files": [
+    "calculator.js",
+    "index.html",
+    "tool.json",
+    "examples.json",
+    "README.md",
+    "LICENSE",
+    "NOTICE",
+    "AUTHORSHIP.md",
+    "CITATION.cff"
+  ],
+  "author": "Felipe Guedes <contato@elucenia.org> (https://fgxdev.com)",
+  "license": "Apache-2.0",
+  "homepage": "https://elucenia.org",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Elucenia/tool-escore-de-mayo-parcial.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Elucenia/tool-escore-de-mayo-parcial/issues"
+  },
   "scripts": {
     "test": "node test.cjs"
   },
   "engines": {
     "node": ">=18"
-  },
-  "private": true,
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Elucenia/tool-escore-de-mayo-parcial.git"
   }
 }
