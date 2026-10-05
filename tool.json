@@ -5,11 +5,11 @@
     "short": "Atividade clínica da retocolite ulcerativa sem endoscopia",
     "desc": "Calcule o escore de Mayo parcial na retocolite ulcerativa: frequência evacuatória, sangramento retal e avaliação médica global, sem o componente endoscópico.",
     "lead": "Versão não invasiva do escore de Mayo (0 a 9 pontos), sem a endoscopia. Acompanha a atividade da retocolite ulcerativa entre as colonoscopias e a resposta ao tratamento.",
+    "kind": "Escore",
     "spec": [
       "coloproctologia",
       "gastroenterologia"
     ],
-    "tier": 1,
     "fields": [
       [
         "freq",
@@ -51,49 +51,7 @@
         }
       ]
     ],
-    "score": {
-      "label": "Mayo parcial",
-      "unit": "de 9",
-      "bands": [
-        [
-          0,
-          "low",
-          "Escore ≤ 2: compatível com remissão clínica",
-          "Corte de 2,5 com melhor sensibilidade e especificidade para remissão percebida pelo paciente (Lewis 2008)."
-        ],
-        [
-          3,
-          "mid",
-          "Escore ≥ 3: doença clinicamente ativa",
-          "Queda de 3 pontos ou mais em relação ao basal indica resposta clínica (Lewis 2008)."
-        ]
-      ]
-    },
     "formula": "<p>Frequência evacuatória (0 a 3) + sangramento retal (0 a 3) + avaliação médica global (0 a 3). Total de 0 a 9.</p><p>O escore de Mayo completo (0 a 12) soma o aspecto endoscópico (0 a 3).</p>",
-    "table": [
-      [
-        "Resultado",
-        "Interpretação (Lewis 2008)"
-      ],
-      [
-        "≤ 2",
-        "Compatível com remissão clínica"
-      ],
-      [
-        "≥ 3",
-        "Doença ativa"
-      ],
-      [
-        "Queda ≥ 3 pontos",
-        "Resposta clínica"
-      ]
-    ],
-    "tips": [
-      "A frequência é comparada com o hábito <strong>do próprio paciente</strong> antes da doença, não com um valor fixo.",
-      "O sangramento considera o pior dia; \"só sangue\" exige pelo menos uma evacuação só de sangue.",
-      "Remissão clínica não é remissão endoscópica: a meta atual inclui cicatrização da mucosa (subescore endoscópico 0 ou 1).",
-      "Surto grave (6 ou mais evacuações com sangue por dia e sinais sistêmicos pelos critérios de Truelove e Witts) pede internação, qualquer que seja o escore."
-    ],
     "sources": [
       [
         "Schroeder KW, Tremaine WJ, Ilstrup DM. Coated oral 5-aminosalicylic acid therapy for mildly to moderately active ulcerative colitis: a randomized study. N Engl J Med, 1987.",
@@ -142,43 +100,6 @@
         }
       ]
     ],
-    "kind": "Escore",
-    "config": {
-      "unit": "de 9",
-      "label": "Mayo parcial",
-      "fields": [
-        [
-          "freq",
-          "radio",
-          0
-        ],
-        [
-          "sang",
-          "radio",
-          0
-        ],
-        [
-          "global",
-          "radio",
-          0
-        ]
-      ],
-      "bands": [
-        [
-          0,
-          "low",
-          "Escore ≤ 2: compatível com remissão clínica",
-          "Corte de 2,5 com melhor sensibilidade e especificidade para remissão percebida pelo paciente (Lewis 2008)."
-        ],
-        [
-          3,
-          "mid",
-          "Escore ≥ 3: doença clinicamente ativa",
-          "Queda de 3 pontos ou mais em relação ao basal indica resposta clínica (Lewis 2008)."
-        ]
-      ]
-    },
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -187,17 +108,415 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T20:02:44.026Z",
+      "total": 64,
+      "passed": 64,
+      "sourceRowCount": 64,
+      "uniqueApiInputCount": 64,
+      "sourceContextCount": 64,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "a09756af847a073f1a5fa7add27355ce734c772ae5d47f67548c57175d629d88",
+        "total": 64,
+        "bankRowCount": 64,
+        "uniqueApiInputCount": 64,
+        "sourceContextCount": 64,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/six-screening-independent-expectations-final28.json",
+            "sha256": "2cbc1f414248ca8b232eca6ddb7843779fa1b3723758d27a7f29a3dd4c947b97"
+          },
+          {
+            "file": "reports/review-20261003/six-screening-primary-source-review-final28-v2.json",
+            "sha256": "2aa00562adf4ec500ce3367132a9ef92a84d610bfd6a7d68671b2bd1dad4f9e3"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/six-screening-independent-source-check-final28.json",
+          "sha256": "9aabf1baacf8aa7df35309a42f2d7e06ec39d67c63fc827ec17f5c5785f1dc89"
+        },
+        "packagingRequirement": "Complete downloadable expected/obtained bank; copy the file byte-exactly into each package. New formula prose/field/source revisions compose under separate ownership."
+      },
+      "inputIdentity": {
+        "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+        "sourceRows": 64,
+        "uniqueApiInputs": 64,
+        "duplicateRows": 0,
+        "expectedTupleSha256": "dc3c4755dd739eac7bc46ae68350b9d248d9fa66c9f0a38f68692b06f53975cc"
+      },
+      "scope": "Previously selected source integer point total only: Exhaustive4^3=64 selected-code combinations; numericpointsum only.",
+      "sources": [
+        {
+          "id": "escore-de-mayo-parcial",
+          "edition": "Lewis2008 partialMayo three selected component scores; original fullMayo endoscopy omitted",
+          "primaryReads": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2597552/",
+              "access": "Official originalLewis2008 fullHTML directly downloaded after webtoolCAPTCHA; actual Methods, Table1/footnotes and Table2 read",
+              "artifact": "six-screening-primary-final28/mayo-lewis2008.html",
+              "sha256": "8565aec2ad5709d974b60b8f2759a6595c97fa6ee34093e96124f95e4ec64204",
+              "readScope": "3×0..3 selected components, partialsum0..9, fullsum0..12 and study-specific bleeding3 modification; not entirearticle read"
+            },
+            {
+              "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC2597552/unicode",
+              "access": "Official PMC BioC fulltext XML download corroborates article content",
+              "artifact": "six-screening-primary-final28/mayo-lewis2008.xml",
+              "sha256": "a07e5b9dda2b5b865569053c91db7dd1271a5dcc77cb4b20fa1bad9330d3c05e",
+              "readScope": "Targeted table/method extraction only"
+            }
+          ],
+          "constants": {
+            "keys": [
+              "freq",
+              "sang",
+              "global"
+            ],
+            "allowedCodes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "maximum": 9
+          },
+          "limitations": [
+            "Selected point arithmetic only; clinical thresholds, diagnosis, referral, treatment, language validation and instrument reproduction rights are not certified.",
+            "Question wording and every population/edition are not established equivalent by a sum-of-codes test. Source metadata access is distinguished from actual targeted table/scoring reads.",
+            "Lewis2008 trial modified bleeding3:≥50% bloodybowelmovements plus some bloodalone. Current label only bloodalone does not establish equivalence to that study-specific rubric; originalSchroeder1987 fulltable not obtained.",
+            "Study response/remissioncutpoints, global assessment/risk/treatment not approved."
+          ]
+        }
+      ],
+      "evidencePath": "reports/review-20261003/six-screening-independent-source-check-final28.json",
+      "evidenceSha256": "9aabf1baacf8aa7df35309a42f2d7e06ec39d67c63fc827ec17f5c5785f1dc89",
+      "independentPeer": {
+        "status": "passed-scoped-numeric",
+        "evidence": {
+          "file": "reports/review-20261003/six-screening-independent-peer-verify-final28.json",
+          "sha256": "f44cf7582617795c9cbb3daf2883b2846546a4249579e9c63b9d0c9d5e3b339c"
+        },
+        "scope": "Independent own frozen expectations plus reauthored original45368 vectors; three-source Node and actual isolatedChromium totals only."
+      },
+      "freshAdapterExecutions": 192,
+      "freshVmExecutions": 192,
+      "actualBrowserEvidenceScope": "Original source28 actual isolated Chromium 64×3 unchanged adapter captures retained in the bank; not a served page/UI proof.",
+      "implementations": [
+        {
+          "file": "apps/website/private/tool-code/escore-de-mayo-parcial/calculator.js",
+          "app": "website",
+          "sha256": "41240bcca26d4fad21e308954d49a46f65852e16d7a2fac33005c0a6cc829621"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/escore-de-mayo-parcial/calculator.js",
+          "app": "dashboard",
+          "sha256": "41240bcca26d4fad21e308954d49a46f65852e16d7a2fac33005c0a6cc829621"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/escore-de-mayo-parcial/calculator.js",
+          "app": "command-center",
+          "sha256": "41240bcca26d4fad21e308954d49a46f65852e16d7a2fac33005c0a6cc829621"
+        }
+      ],
+      "qualifications": [
+        "Selected point arithmetic only; clinical thresholds, diagnosis, referral, treatment, language validation and instrument reproduction rights are not certified.",
+        "Question wording and every population/edition are not established equivalent by a sum-of-codes test. Source metadata access is distinguished from actual targeted table/scoring reads.",
+        "Lewis2008 trial modified bleeding3:≥50% bloodybowelmovements plus some bloodalone. Current label only bloodalone does not establish equivalence to that study-specific rubric; originalSchroeder1987 fulltable not obtained.",
+        "Study response/remissioncutpoints, global assessment/risk/treatment not approved.",
+        "Only caller-selected raw.score integer total is projected into this bank. Original main display, source response-position witnesses and item10 numeric component remain in the untouched donor report; no clinical level, note/verdict, self-harm alarm, diagnosis, treatment or instrument-rubric equivalence is approved.",
+        "All cases and all projected expected/obtained totals are present. Numerical observation arrays are indexed by the exact original case index; mirror/runtime executions do not multiply case or unique-input counts.",
+        "Source access is limited to the precisely recorded original/direct/indexed sections. Existence of an edition or source hyperlink does not mean the entire original paper or questionnaire was read.",
+        "EPDS ordering prose is independently owned by the nine-target clarification candidate; future catalog/resolver merges must preserve those fields rather than replace whole snapshots.",
+        "Fresh compiled/source/package/browser bindings are still required. Clinical validation, official/professional language review, source rights and full-method conformance remain not-performed."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Partial Mayo/Lewis 2008:3 itens 0–3, total 0–9, sem componenteendoscópico",
+    "implementationVersion": "escore-de-mayo-parcial@native-2026-10-03+41240bcca26d",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/3317057/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Frequência evacuatória (0 a 3) + sangramento retal (0 a 3) + avaliação médica global (0 a 3). Total de 0 a 9. O escore de Mayo completo (0 a 12) soma o aspecto endoscópico (0 a 3).",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "freq",
+            "label": "Frequência evacuatória",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Normal para o paciente",
+              "1": "1 a 2 a mais que o normal",
+              "2": "3 a 4 a mais",
+              "3": "5 ou mais a mais"
+            }
+          },
+          {
+            "key": "sang",
+            "label": "Sangramento retal",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Nenhum",
+              "1": "Sangue em menos da metade das evacuações",
+              "2": "Sangue em metade ou mais",
+              "3": "Só sangue (sem fezes)"
+            }
+          },
+          {
+            "key": "global",
+            "label": "Avaliação médica global",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Normal",
+              "1": "Doença leve",
+              "2": "Moderada",
+              "3": "Grave"
+            }
+          }
+        ],
+        "hash": "2e56adc1670a64f6cc1daa029301ff4113c8fd6dc02d5474b3342a72bc58214c"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Schroeder KW, Tremaine WJ, Ilstrup DM. Coated oral 5-aminosalicylic acid therapy for mildly to moderately active ulcerative colitis: a randomized study. N Engl J Med, 1987.",
+          "url": "https://doi.org/10.1056/NEJM198712243172603",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Coated oral 5-aminosalicylic acid therapy for mildly to moderately active ulcerative colitis. A randomized study.",
+            "year": "1987",
+            "firstPublicationDate": "1987-12-01",
+            "doi": "10.1056/nejm198712243172603",
+            "pmid": "3317057",
+            "journal": "The New England journal of medicine",
+            "authors": "Schroeder KW, Tremaine WJ, Ilstrup DM."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/3317057/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "f27fa9808c28a8ba0cfaf91d202ce31e52d3fa2587e8654e20383a51427c193a",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Lewis JD et al. Use of the noninvasive components of the Mayo score to assess clinical response in ulcerative colitis. Inflamm Bowel Dis, 2008.",
+          "url": "https://doi.org/10.1002/ibd.20520",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Use of the noninvasive components of the Mayo score to assess clinical response in ulcerative colitis.",
+            "year": "2008",
+            "firstPublicationDate": "2008-12-01",
+            "doi": "10.1002/ibd.20520",
+            "pmid": "18623174",
+            "pmcid": "PMC2597552",
+            "journal": "Inflammatory bowel diseases",
+            "authors": "Lewis JD, Chuai S, Nessel L, Lichtenstein GR, Aberra FN, Ellenberg JH."
+          },
+          "primaryPublicationUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2597552/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "b563657f8d2688d000878c2d68d90edfe81680c60d49e7e9f8b17afe005abb13",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T20:02:44.026Z",
+        "total": 64,
+        "passed": 64,
+        "sourceRowCount": 64,
+        "uniqueApiInputCount": 64,
+        "sourceContextCount": 64,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "a09756af847a073f1a5fa7add27355ce734c772ae5d47f67548c57175d629d88",
+          "total": 64,
+          "bankRowCount": 64,
+          "uniqueApiInputCount": 64,
+          "sourceContextCount": 64,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/six-screening-independent-expectations-final28.json",
+              "sha256": "2cbc1f414248ca8b232eca6ddb7843779fa1b3723758d27a7f29a3dd4c947b97"
+            },
+            {
+              "file": "reports/review-20261003/six-screening-primary-source-review-final28-v2.json",
+              "sha256": "2aa00562adf4ec500ce3367132a9ef92a84d610bfd6a7d68671b2bd1dad4f9e3"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/six-screening-independent-source-check-final28.json",
+            "sha256": "9aabf1baacf8aa7df35309a42f2d7e06ec39d67c63fc827ec17f5c5785f1dc89"
+          },
+          "packagingRequirement": "Complete downloadable expected/obtained bank; copy the file byte-exactly into each package. New formula prose/field/source revisions compose under separate ownership."
+        },
+        "inputIdentity": {
+          "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+          "sourceRows": 64,
+          "uniqueApiInputs": 64,
+          "duplicateRows": 0,
+          "expectedTupleSha256": "dc3c4755dd739eac7bc46ae68350b9d248d9fa66c9f0a38f68692b06f53975cc"
+        },
+        "scope": "Previously selected source integer point total only: Exhaustive4^3=64 selected-code combinations; numericpointsum only.",
+        "sources": [
+          {
+            "id": "escore-de-mayo-parcial",
+            "edition": "Lewis2008 partialMayo three selected component scores; original fullMayo endoscopy omitted",
+            "primaryReads": [
+              {
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2597552/",
+                "access": "Official originalLewis2008 fullHTML directly downloaded after webtoolCAPTCHA; actual Methods, Table1/footnotes and Table2 read",
+                "artifact": "six-screening-primary-final28/mayo-lewis2008.html",
+                "sha256": "8565aec2ad5709d974b60b8f2759a6595c97fa6ee34093e96124f95e4ec64204",
+                "readScope": "3×0..3 selected components, partialsum0..9, fullsum0..12 and study-specific bleeding3 modification; not entirearticle read"
+              },
+              {
+                "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC2597552/unicode",
+                "access": "Official PMC BioC fulltext XML download corroborates article content",
+                "artifact": "six-screening-primary-final28/mayo-lewis2008.xml",
+                "sha256": "a07e5b9dda2b5b865569053c91db7dd1271a5dcc77cb4b20fa1bad9330d3c05e",
+                "readScope": "Targeted table/method extraction only"
+              }
+            ],
+            "constants": {
+              "keys": [
+                "freq",
+                "sang",
+                "global"
+              ],
+              "allowedCodes": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "maximum": 9
+            },
+            "limitations": [
+              "Selected point arithmetic only; clinical thresholds, diagnosis, referral, treatment, language validation and instrument reproduction rights are not certified.",
+              "Question wording and every population/edition are not established equivalent by a sum-of-codes test. Source metadata access is distinguished from actual targeted table/scoring reads.",
+              "Lewis2008 trial modified bleeding3:≥50% bloodybowelmovements plus some bloodalone. Current label only bloodalone does not establish equivalence to that study-specific rubric; originalSchroeder1987 fulltable not obtained.",
+              "Study response/remissioncutpoints, global assessment/risk/treatment not approved."
+            ]
+          }
+        ],
+        "evidencePath": "reports/review-20261003/six-screening-independent-source-check-final28.json",
+        "evidenceSha256": "9aabf1baacf8aa7df35309a42f2d7e06ec39d67c63fc827ec17f5c5785f1dc89",
+        "independentPeer": {
+          "status": "passed-scoped-numeric",
+          "evidence": {
+            "file": "reports/review-20261003/six-screening-independent-peer-verify-final28.json",
+            "sha256": "f44cf7582617795c9cbb3daf2883b2846546a4249579e9c63b9d0c9d5e3b339c"
+          },
+          "scope": "Independent own frozen expectations plus reauthored original45368 vectors; three-source Node and actual isolatedChromium totals only."
+        },
+        "freshAdapterExecutions": 192,
+        "freshVmExecutions": 192,
+        "actualBrowserEvidenceScope": "Original source28 actual isolated Chromium 64×3 unchanged adapter captures retained in the bank; not a served page/UI proof.",
+        "implementations": [
+          {
+            "file": "apps/website/private/tool-code/escore-de-mayo-parcial/calculator.js",
+            "app": "website",
+            "sha256": "41240bcca26d4fad21e308954d49a46f65852e16d7a2fac33005c0a6cc829621"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/escore-de-mayo-parcial/calculator.js",
+            "app": "dashboard",
+            "sha256": "41240bcca26d4fad21e308954d49a46f65852e16d7a2fac33005c0a6cc829621"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/escore-de-mayo-parcial/calculator.js",
+            "app": "command-center",
+            "sha256": "41240bcca26d4fad21e308954d49a46f65852e16d7a2fac33005c0a6cc829621"
+          }
+        ],
+        "qualifications": [
+          "Selected point arithmetic only; clinical thresholds, diagnosis, referral, treatment, language validation and instrument reproduction rights are not certified.",
+          "Question wording and every population/edition are not established equivalent by a sum-of-codes test. Source metadata access is distinguished from actual targeted table/scoring reads.",
+          "Lewis2008 trial modified bleeding3:≥50% bloodybowelmovements plus some bloodalone. Current label only bloodalone does not establish equivalence to that study-specific rubric; originalSchroeder1987 fulltable not obtained.",
+          "Study response/remissioncutpoints, global assessment/risk/treatment not approved.",
+          "Only caller-selected raw.score integer total is projected into this bank. Original main display, source response-position witnesses and item10 numeric component remain in the untouched donor report; no clinical level, note/verdict, self-harm alarm, diagnosis, treatment or instrument-rubric equivalence is approved.",
+          "All cases and all projected expected/obtained totals are present. Numerical observation arrays are indexed by the exact original case index; mirror/runtime executions do not multiply case or unique-input counts.",
+          "Source access is limited to the precisely recorded original/direct/indexed sections. Existence of an edition or source hyperlink does not mean the entire original paper or questionnaire was read.",
+          "EPDS ordering prose is independently owned by the nine-target clarification candidate; future catalog/resolver merges must preserve those fields rather than replace whole snapshots.",
+          "Fresh compiled/source/package/browser bindings are still required. Clinical validation, official/professional language review, source rights and full-method conformance remain not-performed."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "41240bcca26d4fad21e308954d49a46f65852e16d7a2fac33005c0a6cc829621"
+    },
+    "limits": "O Mayo parcial é uma medida de atividade e resposta na retocolite ulcerativa, com três componentes e sem endoscopia; não equivale ao Mayo completo nem avalia cicatrização endoscópica. A análise de Lewis 2008 envolveu 105 pacientes com doença leve a moderada em um ensaio de 12 semanas e comparou a mudança com a melhora percebida pelo paciente. Esse desenho não demonstra desempenho universal em doença grave, crianças ou outras colites. Registre o período dos sintomas e a avaliação médica; o total não determina tratamento sozinho.",
+    "limitsEvidence": {
+      "status": "original-publication-abstracts-read",
+      "sources": [
+        {
+          "url": "https://doi.org/10.1002/ibd.20520",
+          "edition": "Lewis2008",
+          "readScope": "Exact original abstract fully read:105patients,mild/moderateUC,12weekrosiglitazone trial;change thresholds referenced to patient-perceived response. Direct PMC full text CAPTCHA."
+        },
+        {
+          "url": "https://doi.org/10.1056/NEJM198712243172603",
+          "edition": "Schroeder1987",
+          "readScope": "Exact original abstract fully read:87mild/moderateUCpatients,6weektrial;not an all-populations score validation."
+        }
+      ],
+      "populationScope": "Ulcerative colitis activity/response;partial score omits endoscopy.",
+      "remainingChecks": [
+        "Full Lewis2008 article blocked by CAPTCHA;abstract only.",
+        "No severe/pediatric universal validation read."
+      ],
+      "clinicalValidation": "not-performed",
+      "professionalLanguageReview": "not-performed",
+      "rightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/escore-de-mayo-parcial/calculator.js",
+    "bytes": 4943,
+    "sha256": "41240bcca26d4fad21e308954d49a46f65852e16d7a2fac33005c0a6cc829621"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "e17981bafcc7e575e40903d508904d46f868f2b49286ed835d0d677a1bf85c16",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "cc6132766821f28114053ebaf7f8f4ca18b2d355ea8343315125ef1208dd6b85",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "cc6132766821f28114053ebaf7f8f4ca18b2d355ea8343315125ef1208dd6b85",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

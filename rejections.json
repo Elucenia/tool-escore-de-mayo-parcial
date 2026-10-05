@@ -1,0 +1,152 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field freq",
+    "input": {
+      "sang": "1",
+      "global": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "freq"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field freq",
+    "input": {
+      "freq": "",
+      "sang": "1",
+      "global": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "freq"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option freq",
+    "input": {
+      "freq": "__ELUCENIA_INVALID_OPTION__",
+      "sang": "1",
+      "global": "0"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "freq"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field sang",
+    "input": {
+      "freq": "1",
+      "global": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "sang"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field sang",
+    "input": {
+      "freq": "1",
+      "sang": "",
+      "global": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "sang"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option sang",
+    "input": {
+      "freq": "1",
+      "sang": "__ELUCENIA_INVALID_OPTION__",
+      "global": "0"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "sang"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field global",
+    "input": {
+      "freq": "1",
+      "sang": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "global"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field global",
+    "input": {
+      "freq": "1",
+      "sang": "1",
+      "global": ""
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "global"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option global",
+    "input": {
+      "freq": "1",
+      "sang": "1",
+      "global": "__ELUCENIA_INVALID_OPTION__"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "global"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]
