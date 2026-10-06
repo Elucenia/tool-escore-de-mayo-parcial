@@ -82,3 +82,28 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Escore ≤ 2: compatível com remissão clínica
+
+Corte de 2,5 com melhor sensibilidade e especificidade para remissão percebida pelo paciente (Lewis 2008).
+
+
+### 2
+
+Escore ≥ 3: doença clinicamente ativa
+
+Queda de 3 pontos ou mais em relação ao basal indica resposta clínica (Lewis 2008).
+
+
+### 3
+
+Escore ≥ 3: doença clinicamente ativa
+
+Queda de 3 pontos ou mais em relação ao basal indica resposta clínica (Lewis 2008).
+

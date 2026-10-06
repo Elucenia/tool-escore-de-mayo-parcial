@@ -1,0 +1,537 @@
+{
+  "id": "escore-de-mayo-parcial",
+  "implementationVersion": "escore-de-mayo-parcial@native-2026-10-05+c13995cfa4fc",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "1-1-0: 2 pontos (remissão)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Escore ≤ 2: compatível com remissão clínica",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Corte de 2,5 com melhor sensibilidade e especificidade para remissão percebida pelo paciente (Lewis 2008).",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "1-1-1: 3 pontos (ativa, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Escore ≥ 3: doença clinicamente ativa",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Queda de 3 pontos ou mais em relação ao basal indica resposta clínica (Lewis 2008).",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "3-2-2: 7 pontos (ativa)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Escore ≥ 3: doença clinicamente ativa",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Queda de 3 pontos ou mais em relação ao basal indica resposta clínica (Lewis 2008).",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "1-1-0: 2 pontos (remissão)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Score ≤ 2: compatible with clinical remission",
+            "locale": "en",
+            "template": "documented-authored-2a59c7209d8648d789cc"
+          },
+          "note": {
+            "text": "Cutoff of 2.5 with better sensitivity and specificity for patient-perceived remission (Lewis 2008).",
+            "locale": "en",
+            "template": "documented-authored-a6fe386ab40185973336"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "1-1-1: 3 pontos (ativa, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Score ≥ 3: clinically active disease",
+            "locale": "en",
+            "template": "documented-authored-f92fbcf852bb4da304c7"
+          },
+          "note": {
+            "text": "A decrease of 3 points or more from baseline indicates clinical response (Lewis 2008).",
+            "locale": "en",
+            "template": "documented-authored-88cea20fde7e892f0878"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "3-2-2: 7 pontos (ativa)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Score ≥ 3: clinically active disease",
+            "locale": "en",
+            "template": "documented-authored-f92fbcf852bb4da304c7"
+          },
+          "note": {
+            "text": "A decrease of 3 points or more from baseline indicates clinical response (Lewis 2008).",
+            "locale": "en",
+            "template": "documented-authored-88cea20fde7e892f0878"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "1-1-0: 2 pontos (remissão)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Puntuación ≤ 2: compatible con remisión clínica",
+            "locale": "es",
+            "template": "documented-authored-2a59c7209d8648d789cc"
+          },
+          "note": {
+            "text": "Punto de corte de 2,5 con mejor sensibilidad y especificidad para la remisión percibida por el paciente (Lewis 2008).",
+            "locale": "es",
+            "template": "documented-authored-a6fe386ab40185973336"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "1-1-1: 3 pontos (ativa, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Puntuación ≥ 3: enfermedad clínicamente activa",
+            "locale": "es",
+            "template": "documented-authored-f92fbcf852bb4da304c7"
+          },
+          "note": {
+            "text": "Una disminución de 3 puntos o más respecto al basal indica respuesta clínica (Lewis 2008).",
+            "locale": "es",
+            "template": "documented-authored-88cea20fde7e892f0878"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "3-2-2: 7 pontos (ativa)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Puntuación ≥ 3: enfermedad clínicamente activa",
+            "locale": "es",
+            "template": "documented-authored-f92fbcf852bb4da304c7"
+          },
+          "note": {
+            "text": "Una disminución de 3 puntos o más respecto al basal indica respuesta clínica (Lewis 2008).",
+            "locale": "es",
+            "template": "documented-authored-88cea20fde7e892f0878"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "1-1-0: 2 pontos (remissão)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Score ≤ 2 : compatible avec une rémission clinique",
+            "locale": "fr",
+            "template": "documented-authored-2a59c7209d8648d789cc"
+          },
+          "note": {
+            "text": "Seuil de 2,5 avec une meilleure sensibilité et spécificité pour la rémission perçue par le patient (Lewis 2008).",
+            "locale": "fr",
+            "template": "documented-authored-a6fe386ab40185973336"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "1-1-1: 3 pontos (ativa, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Score ≥ 3 : maladie cliniquement active",
+            "locale": "fr",
+            "template": "documented-authored-f92fbcf852bb4da304c7"
+          },
+          "note": {
+            "text": "Une diminution de 3 points ou plus par rapport à la valeur initiale indique une réponse clinique (Lewis 2008).",
+            "locale": "fr",
+            "template": "documented-authored-88cea20fde7e892f0878"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "3-2-2: 7 pontos (ativa)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Score ≥ 3 : maladie cliniquement active",
+            "locale": "fr",
+            "template": "documented-authored-f92fbcf852bb4da304c7"
+          },
+          "note": {
+            "text": "Une diminution de 3 points ou plus par rapport à la valeur initiale indique une réponse clinique (Lewis 2008).",
+            "locale": "fr",
+            "template": "documented-authored-88cea20fde7e892f0878"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "1-1-0: 2 pontos (remissão)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Punktzahl ≤ 2: vereinbar mit klinischer Remission",
+            "locale": "de",
+            "template": "documented-authored-2a59c7209d8648d789cc"
+          },
+          "note": {
+            "text": "Cutoff von 2,5 mit besserer Sensitivität und Spezifität für die vom Patienten wahrgenommene Remission (Lewis 2008).",
+            "locale": "de",
+            "template": "documented-authored-a6fe386ab40185973336"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "1-1-1: 3 pontos (ativa, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Punktzahl ≥ 3: klinisch aktive Erkrankung",
+            "locale": "de",
+            "template": "documented-authored-f92fbcf852bb4da304c7"
+          },
+          "note": {
+            "text": "Ein Rückgang um 3 Punkte oder mehr gegenüber dem Ausgangswert weist auf ein klinisches Ansprechen hin (Lewis 2008).",
+            "locale": "de",
+            "template": "documented-authored-88cea20fde7e892f0878"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "3-2-2: 7 pontos (ativa)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Punktzahl ≥ 3: klinisch aktive Erkrankung",
+            "locale": "de",
+            "template": "documented-authored-f92fbcf852bb4da304c7"
+          },
+          "note": {
+            "text": "Ein Rückgang um 3 Punkte oder mehr gegenüber dem Ausgangswert weist auf ein klinisches Ansprechen hin (Lewis 2008).",
+            "locale": "de",
+            "template": "documented-authored-88cea20fde7e892f0878"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "1-1-0: 2 pontos (remissão)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Punteggio ≤ 2: compatibile con remissione clinica",
+            "locale": "it",
+            "template": "documented-authored-2a59c7209d8648d789cc"
+          },
+          "note": {
+            "text": "Cutoff di 2,5 con migliore sensibilità e specificità per la remissione percepita dal paziente (Lewis 2008).",
+            "locale": "it",
+            "template": "documented-authored-a6fe386ab40185973336"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "1-1-1: 3 pontos (ativa, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Punteggio ≥ 3: malattia clinicamente attiva",
+            "locale": "it",
+            "template": "documented-authored-f92fbcf852bb4da304c7"
+          },
+          "note": {
+            "text": "Una riduzione di 3 punti o più rispetto al basale indica risposta clinica (Lewis 2008).",
+            "locale": "it",
+            "template": "documented-authored-88cea20fde7e892f0878"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "3-2-2: 7 pontos (ativa)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Punteggio ≥ 3: malattia clinicamente attiva",
+            "locale": "it",
+            "template": "documented-authored-f92fbcf852bb4da304c7"
+          },
+          "note": {
+            "text": "Una riduzione di 3 punti o più rispetto al basale indica risposta clinica (Lewis 2008).",
+            "locale": "it",
+            "template": "documented-authored-88cea20fde7e892f0878"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "1-1-0: 2 pontos (remissão)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "الدرجة ≤ 2: متوافقة مع الهدأة السريرية",
+            "locale": "ar",
+            "template": "documented-authored-2a59c7209d8648d789cc"
+          },
+          "note": {
+            "text": "عتبة 2,5 مع حساسية ونوعية أفضل للهدأة المُدرَكة من قبل المريض (Lewis 2008).",
+            "locale": "ar",
+            "template": "documented-authored-a6fe386ab40185973336"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "1-1-1: 3 pontos (ativa, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "الدرجة ≥ 3: مرض نشط سريريًا",
+            "locale": "ar",
+            "template": "documented-authored-f92fbcf852bb4da304c7"
+          },
+          "note": {
+            "text": "انخفاض بمقدار 3 نقاط أو أكثر مقارنة بخط الأساس يشير إلى استجابة سريرية (Lewis 2008).",
+            "locale": "ar",
+            "template": "documented-authored-88cea20fde7e892f0878"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "3-2-2: 7 pontos (ativa)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "الدرجة ≥ 3: مرض نشط سريريًا",
+            "locale": "ar",
+            "template": "documented-authored-f92fbcf852bb4da304c7"
+          },
+          "note": {
+            "text": "انخفاض بمقدار 3 نقاط أو أكثر مقارنة بخط الأساس يشير إلى استجابة سريرية (Lewis 2008).",
+            "locale": "ar",
+            "template": "documented-authored-88cea20fde7e892f0878"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "1-1-0: 2 pontos (remissão)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "评分 ≤ 2：符合临床缓解",
+            "locale": "zh",
+            "template": "documented-authored-2a59c7209d8648d789cc"
+          },
+          "note": {
+            "text": "2.5 的截点对患者感知的缓解具有更好的敏感性和特异性（Lewis 2008）。",
+            "locale": "zh",
+            "template": "documented-authored-a6fe386ab40185973336"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "1-1-1: 3 pontos (ativa, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "评分 ≥ 3：临床活动性疾病",
+            "locale": "zh",
+            "template": "documented-authored-f92fbcf852bb4da304c7"
+          },
+          "note": {
+            "text": "较基线下降 3 分或以上提示临床应答（Lewis 2008）。",
+            "locale": "zh",
+            "template": "documented-authored-88cea20fde7e892f0878"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "3-2-2: 7 pontos (ativa)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "评分 ≥ 3：临床活动性疾病",
+            "locale": "zh",
+            "template": "documented-authored-f92fbcf852bb4da304c7"
+          },
+          "note": {
+            "text": "较基线下降 3 分或以上提示临床应答（Lewis 2008）。",
+            "locale": "zh",
+            "template": "documented-authored-88cea20fde7e892f0878"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "1-1-0: 2 pontos (remissão)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "スコア ≤ 2：臨床的寛解と一致",
+            "locale": "ja",
+            "template": "documented-authored-2a59c7209d8648d789cc"
+          },
+          "note": {
+            "text": "2.5 のカットオフは、患者が感じる寛解に対してより高い感度と特異度を示す（Lewis 2008）。",
+            "locale": "ja",
+            "template": "documented-authored-a6fe386ab40185973336"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "1-1-1: 3 pontos (ativa, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "スコア ≥ 3：臨床的に活動性の疾患",
+            "locale": "ja",
+            "template": "documented-authored-f92fbcf852bb4da304c7"
+          },
+          "note": {
+            "text": "ベースラインから3点以上の低下は臨床的反応を示す（Lewis 2008）。",
+            "locale": "ja",
+            "template": "documented-authored-88cea20fde7e892f0878"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "3-2-2: 7 pontos (ativa)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "スコア ≥ 3：臨床的に活動性の疾患",
+            "locale": "ja",
+            "template": "documented-authored-f92fbcf852bb4da304c7"
+          },
+          "note": {
+            "text": "ベースラインから3点以上の低下は臨床的反応を示す（Lewis 2008）。",
+            "locale": "ja",
+            "template": "documented-authored-88cea20fde7e892f0878"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "1-1-0: 2 pontos (remissão)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "स्कोर ≤ 2: नैदानिक छूट के अनुरूप",
+            "locale": "hi",
+            "template": "documented-authored-2a59c7209d8648d789cc"
+          },
+          "note": {
+            "text": "2.5 का कटऑफ, रोगी-प्रतीत छूट के लिए बेहतर संवेदनशीलता और विशिष्टता के साथ (Lewis 2008)।",
+            "locale": "hi",
+            "template": "documented-authored-a6fe386ab40185973336"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "1-1-1: 3 pontos (ativa, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "स्कोर ≥ 3: नैदानिक रूप से सक्रिय रोग",
+            "locale": "hi",
+            "template": "documented-authored-f92fbcf852bb4da304c7"
+          },
+          "note": {
+            "text": "आधार रेखा से 3 अंक या अधिक की कमी नैदानिक प्रतिक्रिया इंगित करती है (Lewis 2008)।",
+            "locale": "hi",
+            "template": "documented-authored-88cea20fde7e892f0878"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "3-2-2: 7 pontos (ativa)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "स्कोर ≥ 3: नैदानिक रूप से सक्रिय रोग",
+            "locale": "hi",
+            "template": "documented-authored-f92fbcf852bb4da304c7"
+          },
+          "note": {
+            "text": "आधार रेखा से 3 अंक या अधिक की कमी नैदानिक प्रतिक्रिया इंगित करती है (Lewis 2008)।",
+            "locale": "hi",
+            "template": "documented-authored-88cea20fde7e892f0878"
+          },
+          "level": "mid"
+        }
+      }
+    ]
+  }
+}

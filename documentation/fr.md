@@ -82,3 +82,28 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Score ≤ 2 : compatible avec une rémission clinique
+
+Seuil de 2,5 avec une meilleure sensibilité et spécificité pour la rémission perçue par le patient (Lewis 2008).
+
+
+### 2
+
+Score ≥ 3 : maladie cliniquement active
+
+Une diminution de 3 points ou plus par rapport à la valeur initiale indique une réponse clinique (Lewis 2008).
+
+
+### 3
+
+Score ≥ 3 : maladie cliniquement active
+
+Une diminution de 3 points ou plus par rapport à la valeur initiale indique une réponse clinique (Lewis 2008).
+

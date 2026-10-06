@@ -1,0 +1,169 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "escore-de-mayo-parcial",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "5106c54113d8de558a5fffbf757f2bf3b194030f",
+    "oldEngineSha256": "41240bcca26d4fad21e308954d49a46f65852e16d7a2fac33005c0a6cc829621",
+    "currentEngineSha256": "c13995cfa4fce60a4a70b97d5a52eba5f13729696d10fd847b73d71f7a0181e5"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "1-1-0: 2 pontos (remissão)",
+      "input": {
+        "freq": "1",
+        "sang": "1",
+        "global": "0"
+      },
+      "publicOutput": {
+        "id": "escore-de-mayo-parcial",
+        "main": [
+          "2",
+          "de 9"
+        ],
+        "label": "Mayo parcial",
+        "raw": {
+          "score": 2
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 2,
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "2",
+          "de 9"
+        ],
+        "label": "Mayo parcial",
+        "level": "low",
+        "verdict": "Escore ≤ 2: compatível com remissão clínica",
+        "note": "Corte de 2,5 com melhor sensibilidade e especificidade para remissão percebida pelo paciente (Lewis 2008).",
+        "raw": {
+          "score": 2
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "1-1-1: 3 pontos (ativa, limite)",
+      "input": {
+        "freq": "1",
+        "sang": "1",
+        "global": "1"
+      },
+      "publicOutput": {
+        "id": "escore-de-mayo-parcial",
+        "main": [
+          "3",
+          "de 9"
+        ],
+        "label": "Mayo parcial",
+        "raw": {
+          "score": 3
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 3,
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "3",
+          "de 9"
+        ],
+        "label": "Mayo parcial",
+        "level": "mid",
+        "verdict": "Escore ≥ 3: doença clinicamente ativa",
+        "note": "Queda de 3 pontos ou mais em relação ao basal indica resposta clínica (Lewis 2008).",
+        "raw": {
+          "score": 3
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "3-2-2: 7 pontos (ativa)",
+      "input": {
+        "freq": "3",
+        "sang": "2",
+        "global": "2"
+      },
+      "publicOutput": {
+        "id": "escore-de-mayo-parcial",
+        "main": [
+          "7",
+          "de 9"
+        ],
+        "label": "Mayo parcial",
+        "raw": {
+          "score": 7
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 7,
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "7",
+          "de 9"
+        ],
+        "label": "Mayo parcial",
+        "level": "mid",
+        "verdict": "Escore ≥ 3: doença clinicamente ativa",
+        "note": "Queda de 3 pontos ou mais em relação ao basal indica resposta clínica (Lewis 2008).",
+        "raw": {
+          "score": 7
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    }
+  ]
+}

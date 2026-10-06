@@ -239,7 +239,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Partial Mayo/Lewis 2008:3 itens 0–3, total 0–9, sem componenteendoscópico",
-    "implementationVersion": "escore-de-mayo-parcial@native-2026-10-03+41240bcca26d",
+    "implementationVersion": "escore-de-mayo-parcial@native-2026-10-05+c13995cfa4fc",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/3317057/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -470,7 +470,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "41240bcca26d4fad21e308954d49a46f65852e16d7a2fac33005c0a6cc829621"
+      "implementationHash": "c13995cfa4fce60a4a70b97d5a52eba5f13729696d10fd847b73d71f7a0181e5",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "escore-de-mayo-parcial@native-2026-10-03+41240bcca26d",
+          "previousImplementationHash": "41240bcca26d4fad21e308954d49a46f65852e16d7a2fac33005c0a6cc829621",
+          "implementationHash": "c13995cfa4fce60a4a70b97d5a52eba5f13729696d10fd847b73d71f7a0181e5",
+          "scientificBodySha256": "e85276683115c11c8a08c490b617391606f7137a1aaae50779ecc2e6796ea25d",
+          "metadataContractHash": "2e56adc1670a64f6cc1daa029301ff4113c8fd6dc02d5474b3342a72bc58214c",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "O Mayo parcial é uma medida de atividade e resposta na retocolite ulcerativa, com três componentes e sem endoscopia; não equivale ao Mayo completo nem avalia cicatrização endoscópica. A análise de Lewis 2008 envolveu 105 pacientes com doença leve a moderada em um ensaio de 12 semanas e comparou a mudança com a melhora percebida pelo paciente. Esse desenho não demonstra desempenho universal em doença grave, crianças ou outras colites. Registre o período dos sintomas e a avaliação médica; o total não determina tratamento sozinho.",
     "limitsEvidence": {
@@ -500,20 +528,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/escore-de-mayo-parcial/calculator.js",
-    "bytes": 4943,
-    "sha256": "41240bcca26d4fad21e308954d49a46f65852e16d7a2fac33005c0a6cc829621"
+    "bytes": 5148,
+    "sha256": "c13995cfa4fce60a4a70b97d5a52eba5f13729696d10fd847b73d71f7a0181e5"
   },
-  "sourceToolSha256": "e17981bafcc7e575e40903d508904d46f868f2b49286ed835d0d677a1bf85c16",
+  "sourceToolSha256": "6fcd62fdf5e755a95312c067c3249fe5219a7ad0f7ac2f73d4bc272e62ea94af",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "cc6132766821f28114053ebaf7f8f4ca18b2d355ea8343315125ef1208dd6b85",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "cc6132766821f28114053ebaf7f8f4ca18b2d355ea8343315125ef1208dd6b85",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

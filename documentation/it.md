@@ -82,3 +82,28 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Punteggio ≤ 2: compatibile con remissione clinica
+
+Cutoff di 2,5 con migliore sensibilità e specificità per la remissione percepita dal paziente (Lewis 2008).
+
+
+### 2
+
+Punteggio ≥ 3: malattia clinicamente attiva
+
+Una riduzione di 3 punti o più rispetto al basale indica risposta clinica (Lewis 2008).
+
+
+### 3
+
+Punteggio ≥ 3: malattia clinicamente attiva
+
+Una riduzione di 3 punti o più rispetto al basale indica risposta clinica (Lewis 2008).
+
